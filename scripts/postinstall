@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+for bin in /opt/sphinx-doc/bin/sphinx-*
+do
+    ln -sf $bin /usr/bin/`basename $bin`
+done
